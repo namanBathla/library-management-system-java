@@ -1,6 +1,6 @@
 package com.library.model;
 
-abstract class User {
+public abstract class User {
     protected int userId;
     protected String name;
     protected String email;
@@ -13,10 +13,10 @@ abstract class User {
         this.mobile = mobile;
     }
 
-    int getUserId() { return this.userId; }
-    String getUsername() { return this.name; }
-    String getUserEmail() { return this.email; }
-    String getUserMobile() { return this.mobile; }
+    public int getUserId() { return this.userId; }
+    public String getUsername() { return this.name; }
+    public String getUserEmail() { return this.email; }
+    public String getUserMobile() { return this.mobile; }
 
     public abstract String getRole();
 }
